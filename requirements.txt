@@ -1,0 +1,12 @@
+-f https://paddlepaddle.org.cn/whl/stable.html
+paddlepaddle-gpu==2.0.0rc1.post101
+pandas==1.1.5
+shapely
+imgaug
+pyclipper
+lmdb
+opencv-python==4.2.0.32
+tqdm
+numpy
+visualdl
+python-Levenshtein

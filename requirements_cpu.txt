@@ -1,0 +1,11 @@
+paddlepaddle==2.0.0rc1
+pandas==1.1.5
+shapely
+imgaug
+pyclipper
+lmdb
+opencv-python==4.2.0.32
+tqdm
+numpy
+visualdl
+python-Levenshtein
