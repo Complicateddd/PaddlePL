@@ -23,24 +23,24 @@ Here I provide the URLs of several public OCR tasks for reference:
 
 ------
 
-[EasyOCR]: https://github.com/JaidedAI/EasyOCR
+[EasyOCR] (https://github.com/JaidedAI/EasyOCR)
 
 ( Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.)
 
-[tensorflow]: https://github.com/xiaofengShi/CHINESE-OCR
+[tensorflow] (https://github.com/xiaofengShi/CHINESE-OCR)
 
 ( Use tf to achieve natural scene text detection, keras/pytorch to achieve ctpn+crnn+ctc to achieve variable length scene text OCR recognition)
 
-[chineseocr]: https://github.com/chineseocr/chineseocr
+[chineseocr] (https://github.com/chineseocr/chineseocr)
 
 ( This project is based on yolo3 and crnn to realize Chinese natural scene text detection and recognition)
 
-[PaddleOCR]: https://github.com/PaddlePaddle/PaddleOCR
+[PaddleOCR] (https://github.com/PaddlePaddle/PaddleOCR)
 
 ( Awesome multilingual OCR toolkits based on PaddlePaddle （practical ultra lightweight OCR system, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 
-[chineseocr_lite]: https://github.com/ouyanghuiyu/chineseocr_lite
-[PytorchOCR]: https://github.com/WenmuZhou/PytorchOCR
+[chineseocr_lite] (https://github.com/ouyanghuiyu/chineseocr_lite)
+[PytorchOCR]  (https://github.com/WenmuZhou/PytorchOCR)
 
 ------
 
@@ -50,6 +50,15 @@ This repo uses PaddleOCR as the detection and recognition pipeline (图)
 
 - Filtering and combining；Regarding the extraction of effective information, everyone can take a variety of different methods and play freely. Here I offer two simple ideas.
   1. Find the dividing line, and then use the up and down translation method to extract effective information：（图）
+  
+     
+  
+     with Opencv
+  
+     ```ruby
+      cv2.Canny
+     ```
+  
   2. Find the heading keyword directly first, and extract the information according to the coordinate position of the keyword.（图）
 
 This repo temporarily provides the second method as a baseline.
@@ -95,10 +104,12 @@ Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
   ```
 
    (CPU version)  set  ./hyper_config.py    self.use_gpu=False
-  
+
   ```python
-  ./hyper_config.py --> self.use_gpu=False
+  ./hyper_config.py     -->    self.use_gpu=False
+  
   python run.py ./data/img/ submit.csv
+  
   ```
 
 - **Eval (ROUGE-L)**
