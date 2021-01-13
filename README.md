@@ -1,6 +1,6 @@
-# **'The 2nd Shandong Province Data Application Innovation and Entrepreneurship Competition-Main Arena-Inspection Report Recognition''**
+# **''The 2nd Shandong Province Data Application Innovation and Entrepreneurship Competition-Main Arena-Inspection Report Recognition''**
 
-[TOC]
+
 
 ## Preliminary  &&  Baseline
 
@@ -92,15 +92,15 @@ Configuration
   pip install -r requirements_cpu.txt 
   ```
 
-- **Download Test Data **
+- **Download Test Data**
 
   Then put it to path    **''./data/img''**
 
-  [ link ] (http://data.sd.gov.cn/cmpt/competion/shandong.html)
+  [ TestData] (http://data.sd.gov.cn/cmpt/competion/shandong.html)
 
   
 
-- **Infer Demo: (GPU)**
+- **Inference Demo: (GPU)**
 
   ```python
   python run.py ./data/img/ submit.csv
