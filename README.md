@@ -131,5 +131,11 @@ Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
 
 ![Visualize](https://raw.githubusercontent.com/Complicateddd/PaddlePL/master/img/test46result.png)
 
-Note: If this repo 'PaddlePL' is helpful for you, ***star*** or ***fork*** will be my motivation.
+Note: 
+
+​	Here I just provide a simple process, more need you to explore , welcom to communicate with me !
+
+​				If this repo 'PaddlePL' is helpful for you, 
+
+​														***star*** or ***fork*** will be my motivation.
 
