@@ -1,21 +1,19 @@
-### 	**'The 2nd Shandong Province Data Application Innovation and Entrepreneurship Competition-Main Arena-Inspection Report Recognition''**
+# **'The 2nd Shandong Province Data Application Innovation and Entrepreneurship Competition-Main Arena-Inspection Report Recognition''**
+
+[TOC]
+
+## Preliminary  &&  Baseline
 
 
 
+### Competition analysis
 
+​			The title only gives the data set for local testing, not the data used for training, and encourages the use of open data sets. Therefore, this repo uses open source models and parameters to reason and complete the task of the competition. I divided the question into two parts:
 
-# Preliminary  &&  Baseline
+- Text recognition (position + content)
+- Extraction of effective information (information filtering and combination)
 
-### Competition analysis:
-
-​			The title only gives the data set for local testing, not the data used for training, and encourages the use of open data sets. Therefore, this repo uses open source models and parameters to reason and complete the task of the competition.
-
-### I divided the question into two parts:
-
-1. Text recognition (position + content)
-2. Extraction of effective information (information filtering and combination)
-
-### Solution: 
+### Solution
 
 - First use the public model and weights and models to detect the text position and text content recognition. 
 
@@ -23,15 +21,15 @@ Here I provide the URLs of several public OCR tasks for reference:
 
 ------
 
-- [ ] **[EasyOCR] (https://github.com/JaidedAI/EasyOCR)**
+- [ ] **[*EasyOCR*] (https://github.com/JaidedAI/EasyOCR)**
 
 ( Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.)
 
-- [ ] **[tensorflow] (https://github.com/xiaofengShi/CHINESE-OCR)**
+- [ ] **[*tensorflow*] (https://github.com/xiaofengShi/CHINESE-OCR)**
 
 ( Use tf to achieve natural scene text detection, keras/pytorch to achieve ctpn+crnn+ctc to achieve variable length scene text OCR recognition)
 
-- [ ] **[chineseocr] (https://github.com/chineseocr/chineseocr)**
+- [ ] **[*chineseocr*] (https://github.com/chineseocr/chineseocr)**
 
 ( This project is based on yolo3 and crnn to realize Chinese natural scene text detection and recognition)
 
@@ -39,12 +37,12 @@ Here I provide the URLs of several public OCR tasks for reference:
 
 ( Awesome multilingual OCR toolkits based on PaddlePaddle （practical ultra lightweight OCR system, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 
-- [ ] **[chineseocr_lite] (https://github.com/ouyanghuiyu/chineseocr_lite)**
-- [ ] **[PytorchOCR]  (https://github.com/WenmuZhou/PytorchOCR)**
+- [ ] **[*chineseocr_lite*] (https://github.com/ouyanghuiyu/chineseocr_lite)**
+- [ ] **[*PytorchOCR*]  (https://github.com/WenmuZhou/PytorchOCR)**
 
 ------
 
-This repo uses PaddleOCR as the detection and recognition part
+​		This repo uses PaddleOCR as the detection and recognition part
 
 ![paddleocr](https://raw.githubusercontent.com/Complicateddd/PaddlePL/master/img/train_83.jpg)
 
@@ -55,7 +53,7 @@ This repo uses PaddleOCR as the detection and recognition part
   
      You can detection by open-cv:
   
-     ```ruby
+     ```python
       cv2.Canny
      ```
   
@@ -69,9 +67,10 @@ This repo temporarily provides the second method as a baseline.
 
 ## Usage:   ( Paddle Pipeline)
 
-#### Configuration
+Configuration
 
-Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
+- Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
+
 
 - **Clone this repo:**
 
@@ -122,7 +121,7 @@ Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
   python rouge.py
   ```
 
-## Result && Evaluation
+## <u>Result</u> && Evaluation
 
 |         | Image Number | ROUGE-L |
 | :-----: | :----------: | :-----: |
@@ -133,9 +132,5 @@ Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
 
 Note: 
 
-​	Here I just provide a simple process, more need you to explore , welcom to communicate with me !
-
-​				If this repo 'PaddlePL' is helpful for you, 
-
-​														***star*** or ***fork*** will be my motivation.
+​	Here I just provide a simple process, more need you to explore , welcom to communicate with me !  If this repo 'PaddlePL' is helpful for you, <u>***star*** or ***fork***</u> will be my motivation.
 
