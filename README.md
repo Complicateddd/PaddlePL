@@ -76,7 +76,7 @@ Ubuntu 18.04   Cuda 10.1  cudnn 7.6.5+  Python 3.6.12
 - **Clone this repo:**
 
   ```python
-  git clone 
+  git clone https://github.com/Complicateddd/PaddlePL.git
   ```
 
 - **Install library (GPU):**
